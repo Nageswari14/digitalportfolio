@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>K.Nageswari</h1>
+<h2>B.Sc Computer Science</h2>
+<h3>Arignar Anna College.</h3>
+<img src="index2.jpeg" alt="bike" width="500" height="300">
+<script>
+    document.querySelectorAll('a[href^="#"]').foreach(anchor=>
+    {
+        anchor.addEventListener('click',function(e){
+            e.preventDefault();
+            const targetId=this.getAttribute('href').substring(1);
+            const targetIdElement=document.getElementById(targetId);
+            if(targetElement){
+                window.scrollTo({
+                    top:targetElement.offsetTop,behaviour:'smooth'
+                });
+            }
+        });
+</script>
+</body>
+</html>
